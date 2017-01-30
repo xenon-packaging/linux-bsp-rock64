@@ -1,0 +1,5 @@
+arch/arm/boot/uImage  /boot/
+arch/arm/boot/dts/meson8b_odroidc.dtb /boot/
+lib/modules/*
+boot/System.map*
+boot/config*
