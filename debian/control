@@ -7,7 +7,7 @@ Standards-Version: 3.9.8
 Homepage: https://github.com/hardkernel/linux/tree/odroidc-3.10.y
 
 Package: c2-linux-image
-Architecture: armhf
+Architecture: arm64
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: kernel package for the ODROID C2
  This package contains the nececssary kernel bits to boot
