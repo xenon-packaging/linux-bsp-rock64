@@ -12,8 +12,7 @@ override_dh_auto_configure:
 	dh_auto_configure
 
 override_dh_auto_build:
-	$(MAKE) V=1 Image dtbs modules
-
+	dh_auto_build -- V=1 Image dtbs modules
 override_dh_auto_clean:
 	$(MAKE) clean
 
