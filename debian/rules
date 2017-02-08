@@ -1,6 +1,7 @@
 #!/usr/bin/make -f
 
-export DEB_BUILD_MAINT_OPTIONS = hardening=-all
+export KCPPFLAGS += -fno-pie
+export DEB_BUILD_MAINT_OPTIONS = hardening=-relro
 export DH_VERBOSE = 1
 
 %:

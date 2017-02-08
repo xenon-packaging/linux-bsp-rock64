@@ -1,5 +1,5 @@
-arch/arm/boot/uImage  /boot/
-arch/arm/boot/dts/meson8b_odroidc.dtb /boot/
+arch/arm64/boot/Image  /boot/
+arch/arm64/boot/dts/meson64_odroidc2.dts /boot/
 lib/modules/*
 boot/System.map*
 boot/config*
