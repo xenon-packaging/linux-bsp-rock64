@@ -1,4 +1,4 @@
-Source: c2-linux
+Source: rock64-linux
 Section: kernel
 Priority: optional
 Maintainer: Rohan Garg <rohan@kde.org>
@@ -6,7 +6,7 @@ Build-Depends: debhelper (>=9), build-essential, bc, lzop, u-boot-tools
 Standards-Version: 3.9.8
 Homepage: https://github.com/hardkernel/linux/tree/odroidc-3.10.y
 
-Package: c2-linux-image
+Package: rock64-linux-image
 Architecture: arm64
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: kernel package for the ODROID C2

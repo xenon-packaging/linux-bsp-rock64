@@ -8,7 +8,7 @@ export DH_VERBOSE = 1
 	dh $@ --parallel
 
 override_dh_auto_configure:
-	$(MAKE) VERBOSE=1 odroidc2_defconfig
+	$(MAKE) VERBOSE=1 rockchip_linux_defconfig
 	dh_auto_configure
 
 override_dh_auto_build:
@@ -19,4 +19,4 @@ override_dh_auto_clean:
 override_dh_auto_install:
 	mkdir -p debian/tmp/boot/
 	INSTALL_PATH=debian/tmp/boot/ dh_auto_install
-	$(MAKE) V=1 INSTALL_MOD_PATH=debian/tmp/ INSTALL_MOD_STRIP=1 modules_install
+	$(MAKE) V=1 INSTALL_FW_PATH=debian/tmp INSTALL_MOD_PATH=debian/tmp/ INSTALL_MOD_STRIP=1 modules_install firmware_install
