@@ -17,6 +17,8 @@ override_dh_auto_clean:
 	$(MAKE) clean
 
 override_dh_auto_install:
-	mkdir -p debian/tmp/boot/
-	INSTALL_PATH=debian/tmp/boot/ dh_auto_install
-	$(MAKE) V=1 INSTALL_FW_PATH=debian/tmp INSTALL_MOD_PATH=debian/tmp/ INSTALL_MOD_STRIP=1 modules_install firmware_install
+	mkdir -p debian/rock64-linux-image/boot/
+	INSTALL_PATH=debian/rock64-linux-image/boot/ dh_auto_install
+	$(MAKE) V=1 INSTALL_FW_PATH=debian/rock64-linux-image INSTALL_MOD_PATH=debian/rock64-linux-image/ INSTALL_MOD_STRIP=1 modules_install firmware_install
+	cp arch/arm64/boot/Image debian/rock64-linux-image/boot/
+	cp arch/arm64/boot/dts/rockchip/rk3328-rock64.dtb debian/rock64-linux-image/boot/
