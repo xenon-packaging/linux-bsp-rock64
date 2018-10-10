@@ -1,4 +1,4 @@
-rock64-linux (4.4-1) unstable; urgency=medium
+linux-bsp-rock64 (4.4-1) unstable; urgency=medium
 
   * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
 
