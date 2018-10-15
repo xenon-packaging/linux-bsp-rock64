@@ -1,6 +1,7 @@
 #!/usr/bin/make -f
 
 export KCPPFLAGS += -fno-pie
+export LDFLAGS := -Wl,-z,relro
 export DEB_BUILD_MAINT_OPTIONS = hardening=-relro
 export DH_VERBOSE = 1
 
